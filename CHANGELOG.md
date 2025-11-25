@@ -1,3 +1,13 @@
+## 0.3.2 (2025-11-25)
+
+### Bug Fixes
+
+-  format ids as uuid ([fcdf0](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/fcdf028591b0dcd) Nils Elveros)  
+-  **deps**  update dependency se.fk.gradle:gradle-conventions to v1.18.1 ([97844](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/97844ba722ec148) renovate[bot])  
+
+### Dependency updates
+
+- update gradle to v9.2.1 ([88705](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/88705193e2a33e7) renovate[bot])  
 ## 0.3.1 (2025-11-20)
 
 ### Bug Fixes
