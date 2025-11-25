@@ -68,6 +68,7 @@ components:
         properties:
           uppgift_id:
             type: string
+            format: uuid
             description: Unikt ID som identifierar instansen av uppgifts-objektet
           status:
             title: status
@@ -92,6 +93,7 @@ components:
           description: Regelns version
         kundbehovsflode_id:
           type: string
+          format: uuid
           description: Unikt ID som identifierar kundbehovsflödet
         regeltyp:
           type: string
@@ -102,6 +104,7 @@ components:
       properties:
         correlationId:
           type: string
+          format: uuid
           description: Unikt id som kopplar ihop request & response
 
     OperativtUppgiftslagerResponseMessage:
@@ -110,7 +113,9 @@ components:
       properties:
         uppgift_id:
           type: string
+          format: uuid
           description: Unikt ID som identifierar instansen av uppgifts-objektet
         kundbehovsflode_id:
           type: string
+          format: uuid
           description: Unikt ID som identifierar kundbehovsflödet
