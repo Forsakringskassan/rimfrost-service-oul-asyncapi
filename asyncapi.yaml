@@ -63,9 +63,14 @@ components:
         title: OperativtUppgiftslagerStatusMessage
         type: object
         required:
+          - kundbehovsflode_id
           - uppgift_id
           - status
         properties:
+          kundbehovsflode_id:
+            type: string
+            format: uuid
+            description: Unikt ID som identifierar kundbehovsflödet
           uppgift_id:
             type: string
             format: uuid
