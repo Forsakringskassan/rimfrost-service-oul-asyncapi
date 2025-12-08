@@ -1,3 +1,9 @@
+## 0.3.3 (2025-12-08)
+
+### Bug Fixes
+
+-  add kundbehovsflodeId to status notification ([0ae5b](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/0ae5ba10b1d0f69) Nils Elveros)  
+
 ## 0.3.2 (2025-11-25)
 
 ### Bug Fixes
