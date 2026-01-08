@@ -1,3 +1,21 @@
+## 0.4.0 (2026-01-08)
+
+### Features
+
+-  OulRequestMessage now contains processnamn, regelnamn, beskrivning etc ([34ece](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/34ecef31708f8a6) Nils Elveros)  
+
+### Bug Fixes
+
+-  changed to kundbehov and regel ([6a917](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/6a9178574c18c68) Nils Elveros)  
+
+### Other changes
+
+**changed uppgiftbeskrivning to beskrivning**
+
+
+[9068f](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/9068f11e84cff7d) Nils Elveros *2026-01-08 08:45:36*
+
+
 ## 0.3.3 (2025-12-08)
 
 ### Bug Fixes
