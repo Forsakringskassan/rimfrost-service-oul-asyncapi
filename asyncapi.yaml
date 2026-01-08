@@ -100,9 +100,21 @@ components:
           type: string
           format: uuid
           description: Unikt ID som identifierar kundbehovsflödet
-        regeltyp:
+        processnamn:
           type: string
-          description: Vilken regel uppgiften avser
+          description: Namn på förmån
+        regelnamn:
+          type: string
+          description: Namn på regeln
+        uppgiftsbeskrivning:
+          type: string
+          description: Kortfattad beskrivning av uppgiften
+        verksamhetslogik:
+          type: string
+        roll:
+          type: string
+        url:
+          type: string
 
     OperativtUppgiftslagerResponseMessageHeaders:
       type: object
