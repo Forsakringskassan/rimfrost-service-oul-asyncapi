@@ -106,7 +106,7 @@ components:
         regel:
           type: string
           description: Namn på regeln
-        uppgiftsbeskrivning:
+        beskrivning:
           type: string
           description: Kortfattad beskrivning av uppgiften
         verksamhetslogik:
