@@ -100,10 +100,10 @@ components:
           type: string
           format: uuid
           description: Unikt ID som identifierar kundbehovsflödet
-        processnamn:
+        kundbehov:
           type: string
-          description: Namn på förmån
-        regelnamn:
+          description: Namn på kundbehov
+        regel:
           type: string
           description: Namn på regeln
         uppgiftsbeskrivning:
