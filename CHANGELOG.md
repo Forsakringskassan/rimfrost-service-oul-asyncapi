@@ -1,3 +1,9 @@
+## 0.4.1 (2026-01-19)
+
+### Bug Fixes
+
+-  add utforar_id to status message ([07565](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/07565344c6ad218) Nils Elveros)  
+
 ## 0.4.0 (2026-01-08)
 
 ### Features
