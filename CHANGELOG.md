@@ -1,3 +1,13 @@
+## 0.4.2 (2026-02-04)
+
+### Bug Fixes
+
+-  add missing reply to header to oul request ([d4126](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/d4126c36dcd44f8) Nils Elveros)  
+
+### Dependency updates
+
+- update gradle to v9.3.1 ([069a6](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/069a68088ecfd87) renovate[bot])  
+- update gradle to v9.3.0 ([ce706](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/ce7061fa2cb271e) renovate[bot])  
 ## 0.4.1 (2026-01-19)
 
 ### Bug Fixes
