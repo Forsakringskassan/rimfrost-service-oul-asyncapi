@@ -47,6 +47,8 @@ operations:
 components:
   messages:
     OperativtUppgiftslagerRequestMessage:
+      headers:
+        $ref: "#/components/schemas/OperativtUppgiftslagerRequestMessageHeaders"
       payload:
         title: OperativtUppgiftslagerRequestMessage
         $ref: "#/components/schemas/OperativtUppgiftslagerRequestMessage"
@@ -128,6 +130,19 @@ components:
           type: string
           format: uuid
           description: Unikt id som kopplar ihop request & response
+
+    OperativtUppgiftslagerRequestMessageHeaders:
+      type: object
+      properties:
+        replyTo:
+          type: string
+          description: Topic där response ska skickas
+        correlationId:
+          type: string
+          format: uuid
+          description: Unikt id som kopplar ihop request & response
+      required:
+        - replyTo
 
     OperativtUppgiftslagerResponseMessage:
       type: object
