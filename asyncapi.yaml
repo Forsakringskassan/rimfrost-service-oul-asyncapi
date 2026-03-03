@@ -65,14 +65,14 @@ components:
         title: OperativtUppgiftslagerStatusMessage
         type: object
         required:
-          - kundbehovsflode_id
+          - handlaggning_id
           - uppgift_id
           - status
         properties:
-          kundbehovsflode_id:
+          handlaggning_id:
             type: string
             format: uuid
-            description: Unikt ID som identifierar kundbehovsflödet
+            description: Unikt ID som identifierar handläggningsärendet
           uppgift_id:
             type: string
             format: uuid
@@ -97,19 +97,19 @@ components:
       title: OperativtUppgiftslagerRequestMessage
       required:
         - version
-        - kundbehovsflode_id
+        - handlaggning_id
         - regeltyp
       properties:
         version:
           type: string
           description: Regelns version
-        kundbehovsflode_id:
+        handlaggning_id:
           type: string
           format: uuid
-          description: Unikt ID som identifierar kundbehovsflödet
-        kundbehov:
+          description: Unikt ID som identifierar handläggningsärendet
+        yrkande:
           type: string
-          description: Namn på kundbehov
+          description: Namn på yrkande
         regel:
           type: string
           description: Namn på regeln
@@ -152,7 +152,7 @@ components:
           type: string
           format: uuid
           description: Unikt ID som identifierar instansen av uppgifts-objektet
-        kundbehovsflode_id:
+        handlaggning_id:
           type: string
           format: uuid
-          description: Unikt ID som identifierar kundbehovsflödet
+          description: Unikt ID som identifierar handläggningsärendet
