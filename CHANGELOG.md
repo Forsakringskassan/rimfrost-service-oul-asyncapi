@@ -1,3 +1,9 @@
+## 0.4.3 (2026-03-03)
+
+### Bug Fixes
+
+-  Rename kundbehovsflode til handlaggning ([748bc](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/748bc5effaa0524) Lars Persson)  
+
 ## 0.4.2 (2026-02-04)
 
 ### Bug Fixes
