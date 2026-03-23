@@ -163,15 +163,15 @@ components:
       type: object
       title: Individ
       required:
-        - individ_type
-        - individ_value
+        - type
+        - value
       properties:
-        individ_type:
+        type:
           type: string
           description: Individtypen (e.g. Kortnummer, Pnr, ....)
-        individ_value:
+        value:
           type: string
           description: Värde för individtypen
       example:
-        individ_type: "Pnr"
-        individ_value: "000000-0000"
+        type: "Pnr"
+        value: "000000-0000"
