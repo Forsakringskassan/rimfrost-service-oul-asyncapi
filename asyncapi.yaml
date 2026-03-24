@@ -110,7 +110,9 @@ components:
         individer:
           type: array
           items:
-            $ref: '#/components/schemas/Individ'
+            type: string
+            format: uuid
+            description: Unikt ID som identifierar en individ
           description: Lista av individer i ärendet
         regel:
           type: string
@@ -158,20 +160,3 @@ components:
           type: string
           format: uuid
           description: Unikt ID som identifierar handläggningsärendet
-
-    Individ:
-      type: object
-      title: Individ
-      required:
-        - type
-        - value
-      properties:
-        type:
-          type: string
-          description: Individtypen (e.g. Kortnummer, Pnr, ....)
-        value:
-          type: string
-          description: Värde för individtypen
-      example:
-        type: "Pnr"
-        value: "000000-0000"
