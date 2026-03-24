@@ -1,3 +1,12 @@
+## 0.5.0 (2026-03-24)
+
+### Bug Fixes
+
+-  Send individ id instead of complete individ information in request ([bfa33](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/bfa33d8ae37f79d) Lars Persson)  
+
+### Dependency updates
+
+- update gradle to v9.4.0 ([0e831](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/0e8315b7d61a005) renovate[bot])  
 ## 0.4.3 (2026-03-03)
 
 ### Bug Fixes
