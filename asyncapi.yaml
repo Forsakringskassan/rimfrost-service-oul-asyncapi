@@ -78,8 +78,7 @@ components:
             format: uuid
             description: Unikt ID som identifierar instansen av uppgifts-objektet
           utforar_id:
-            type: string
-            format: uuid
+            $ref: '#/components/schemas/Idtyp'
             nullable: true
             description: Unikt ID som identifierar den tilldelade utföraren
           status:
@@ -110,8 +109,7 @@ components:
         individer:
           type: array
           items:
-            type: string
-            format: uuid
+            $ref: '#/components/schemas/Idtyp'
             description: Unikt ID som identifierar en individ
           description: Lista av individer i ärendet
         regel:
@@ -160,3 +158,16 @@ components:
           type: string
           format: uuid
           description: Unikt ID som identifierar handläggningsärendet
+
+    Idtyp:
+      type: object
+      properties:
+        typid:
+          type: string
+          comment: Unikt ID som identifierar vilken typ av värde som anges
+        varde:
+          type: string
+          comment: ID-värde som identifieras av typ
+        example:
+          typId: "4c34906c-03d9-425f-9a1a-062ef6eb88c7"
+          varde: "19901010-1234"
