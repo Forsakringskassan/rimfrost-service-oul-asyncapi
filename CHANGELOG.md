@@ -1,3 +1,9 @@
+## 0.5.1 (2026-04-08)
+
+### Bug Fixes
+
+-  Use Idtyp for individ list ([418b8](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/418b8b636950af2) Lars Persson)  
+
 ## 0.5.0 (2026-03-24)
 
 ### Bug Fixes
