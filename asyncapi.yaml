@@ -78,7 +78,7 @@ components:
             format: uuid
             description: Unikt ID som identifierar instansen av uppgifts-objektet
           utforar_id:
-            $ref: '#/components/schemas/Idtyp'
+            type: string
             nullable: true
             description: Unikt ID som identifierar den tilldelade utföraren
           status:
