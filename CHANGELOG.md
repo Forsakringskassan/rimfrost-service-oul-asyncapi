@@ -1,3 +1,9 @@
+## 0.5.2 (2026-04-09)
+
+### Bug Fixes
+
+-  Use string for utforar_id type ([aa5f0](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/aa5f0039ac8e683) Lars Persson)  
+
 ## 0.5.1 (2026-04-08)
 
 ### Bug Fixes
