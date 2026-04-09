@@ -1,3 +1,12 @@
+## 0.5.3 (2026-04-09)
+
+### Bug Fixes
+
+-  Rename typid to typId ([b5959](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/b59598fc4f6e468) Lars Persson)  
+
+### Dependency updates
+
+- update gradle to v9.4.1 ([2c1b4](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/2c1b49604db624b) renovate[bot])  
 ## 0.5.2 (2026-04-09)
 
 ### Bug Fixes
