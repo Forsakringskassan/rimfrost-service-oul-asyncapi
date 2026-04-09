@@ -162,7 +162,7 @@ components:
     Idtyp:
       type: object
       properties:
-        typid:
+        typId:
           type: string
           comment: Unikt ID som identifierar vilken typ av värde som anges
         varde:
