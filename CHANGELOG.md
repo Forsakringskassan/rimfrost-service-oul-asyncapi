@@ -1,3 +1,9 @@
+## 0.5.5 (2026-04-10)
+
+### Bug Fixes
+
+-  skippar allOf för att fixa genererad kod ([765c1](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/765c19c902a8c87) Ulf Slunga)  
+
 ## 0.5.4 (2026-04-10)
 
 ### Bug Fixes
