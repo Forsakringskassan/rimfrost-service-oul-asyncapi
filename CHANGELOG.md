@@ -1,3 +1,9 @@
+## 0.5.4 (2026-04-10)
+
+### Bug Fixes
+
+-  modifierar status med Idtyp och Status ([0934e](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/0934e5c204531e0) Ulf Slunga)  
+
 ## 0.5.3 (2026-04-09)
 
 ### Bug Fixes
