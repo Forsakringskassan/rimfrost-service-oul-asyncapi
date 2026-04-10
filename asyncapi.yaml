@@ -78,17 +78,13 @@ components:
             format: uuid
             description: Unikt ID som identifierar instansen av uppgifts-objektet
           utforar_id:
-            type: string
-            nullable: true
+            allOf:
+              - $ref: "#/components/schemas/Idtyp"
             description: Unikt ID som identifierar den tilldelade utföraren
           status:
             title: status
             type: string
             description: Status för uppgiften
-            enum:
-              - Ny
-              - Tilldelad
-              - Avslutad
 
   schemas:
     OperativtUppgiftslagerRequestMessage:
@@ -168,6 +164,9 @@ components:
         varde:
           type: string
           comment: ID-värde som identifieras av typ
-        example:
-          typId: "4c34906c-03d9-425f-9a1a-062ef6eb88c7"
-          varde: "19901010-1234"
+      required:
+        - typId
+        - varde
+      example:
+        typId: "4c34906c-03d9-425f-9a1a-062ef6eb88c7"
+        varde: "19901010-1234"
