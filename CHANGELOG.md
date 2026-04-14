@@ -1,3 +1,9 @@
+## 0.5.6 (2026-04-14)
+
+### Bug Fixes
+
+-  Restore enum values for status field ([f82e2](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/f82e20a258982e0) Lars Persson)  
+
 ## 0.5.5 (2026-04-10)
 
 ### Bug Fixes
