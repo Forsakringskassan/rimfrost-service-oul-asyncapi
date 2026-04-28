@@ -1,3 +1,13 @@
+## 1.0.0 (2026-04-28)
+
+### Breaking changes
+
+-  release 1.0 ([84632](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/846321f091b6277) Ulf Slunga)  
+
+### Features
+
+-  release 1.0 ([84632](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/846321f091b6277) Ulf Slunga)  
+
 ## 0.5.6 (2026-04-14)
 
 ### Bug Fixes
