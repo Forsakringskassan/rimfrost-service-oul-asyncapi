@@ -1,7 +1,7 @@
 asyncapi: 3.0.0
 info:
   title: Operativt uppgiftslager Async API
-  version: 1.1.0
+  version: 1.2.0
   description: Operativt uppgiftslager för hantering av manuella uppgifter utförda av handläggare
 
 channels:
@@ -63,31 +63,7 @@ components:
     OperativtUppgiftslagerStatusMessage:
       payload:
         title: OperativtUppgiftslagerStatusMessage
-        type: object
-        required:
-          - handlaggning_id
-          - uppgift_id
-          - status
-        properties:
-          handlaggning_id:
-            type: string
-            format: uuid
-            description: Unikt ID som identifierar handläggningsärendet
-          uppgift_id:
-            type: string
-            format: uuid
-            description: Unikt ID som identifierar instansen av uppgifts-objektet
-          utforar_id:
-            $ref: "#/components/schemas/Idtyp"
-            description: Unikt ID som identifierar den tilldelade utföraren
-          status:
-            title: status
-            type: string
-            description: Status för uppgiften
-            enum:
-              - Ny
-              - Tilldelad
-              - Avslutad
+        $ref: "#/components/schemas/OperativtUppgiftslagerStatusMessage"
 
   schemas:
     OperativtUppgiftslagerRequestMessage:
@@ -96,7 +72,8 @@ components:
       required:
         - version
         - handlaggning_id
-        - regeltyp
+        - regel
+        - cloudevent_attributes
       properties:
         version:
           type: string
@@ -123,6 +100,39 @@ components:
           type: string
         url:
           type: string
+        cloudevent_attributes:
+          $ref: "#/components/schemas/CloudeventAttributes"
+
+    OperativtUppgiftslagerStatusMessage:
+      type: object
+      title: OperativtUppgiftslagerStatusMessage
+      required:
+        - handlaggning_id
+        - uppgift_id
+        - status
+        - cloudevent_attributes
+      properties:
+        handlaggning_id:
+          type: string
+          format: uuid
+          description: Unikt ID som identifierar handläggningsärendet
+        uppgift_id:
+          type: string
+          format: uuid
+          description: Unikt ID som identifierar instansen av uppgifts-objektet
+        utforar_id:
+          $ref: "#/components/schemas/Idtyp"
+          description: Unikt ID som identifierar den tilldelade utföraren
+        status:
+          title: status
+          type: string
+          description: Status för uppgiften
+          enum:
+            - Ny
+            - Tilldelad
+            - Avslutad
+        cloudevent_attributes:
+          $ref: "#/components/schemas/CloudeventAttributes"
 
     OperativtUppgiftslagerResponseMessageHeaders:
       type: object
@@ -157,6 +167,13 @@ components:
           type: string
           format: uuid
           description: Unikt ID som identifierar handläggningsärendet
+
+    CloudeventAttributes:
+      type: object
+      title: CloudeventAttributes
+      additionalProperties:
+        type: string
+      description: CloudEvent-attribut som skickas med i request och returneras oförändrade i statusnotifikationer
 
     Idtyp:
       type: object
