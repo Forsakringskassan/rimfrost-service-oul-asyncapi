@@ -1,3 +1,12 @@
+## 1.0.1 (2026-05-06)
+
+### Bug Fixes
+
+-  cloudevent data skickas transparent i oul request och returneras i oul status ([6293a](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/6293a75664fcd71) Ulf Slunga)  
+
+### Dependency updates
+
+- update gradle to v9.5.0 ([d94a1](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/d94a1068ee07208) renovate[bot])  
 ## 1.0.0 (2026-04-28)
 
 ### Breaking changes
