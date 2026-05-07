@@ -1,3 +1,9 @@
+## 1.0.2 (2026-05-07)
+
+### Bug Fixes
+
+-  ny status Avbruten ([4c972](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/4c972c546d8168d) Ulf Slunga)  
+
 ## 1.0.1 (2026-05-06)
 
 ### Bug Fixes
