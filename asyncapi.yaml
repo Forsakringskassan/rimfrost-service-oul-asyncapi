@@ -131,6 +131,7 @@ components:
             - Ny
             - Tilldelad
             - Avslutad
+            - Avbruten
         cloudevent_attributes:
           $ref: "#/components/schemas/CloudeventAttributes"
 
