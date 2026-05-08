@@ -1,3 +1,9 @@
+## 1.0.3 (2026-05-08)
+
+### Bug Fixes
+
+-  cloudevent attributes i OperativtUppgiftslagerResponseMessage ([6dc79](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/6dc797f0303980c) Ulf Slunga)  
+
 ## 1.0.2 (2026-05-07)
 
 ### Bug Fixes
