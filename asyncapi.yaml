@@ -159,6 +159,8 @@ components:
     OperativtUppgiftslagerResponseMessage:
       type: object
       title: OperativtUppgiftslagerResponseMessage
+      required:
+        - cloudevent_attributes
       properties:
         uppgift_id:
           type: string
@@ -168,13 +170,15 @@ components:
           type: string
           format: uuid
           description: Unikt ID som identifierar handläggningsärendet
+        cloudevent_attributes:
+          $ref: "#/components/schemas/CloudeventAttributes"
 
     CloudeventAttributes:
       type: object
       title: CloudeventAttributes
       additionalProperties:
         type: string
-      description: CloudEvent-attribut som skickas med i request och returneras oförändrade i statusnotifikationer
+      description: CloudEvent-attribut som skickas med i request och returneras oförändrade i response och statusnotifikationer
 
     Idtyp:
       type: object
