@@ -161,6 +161,7 @@ components:
       title: OperativtUppgiftslagerResponseMessage
       required:
         - cloudevent_attributes
+        - result
       properties:
         uppgift_id:
           type: string
@@ -170,6 +171,20 @@ components:
           type: string
           format: uuid
           description: Unikt ID som identifierar handläggningsärendet
+        result:
+          type: object
+          required:
+            - code
+          properties:
+            code:
+              type: string
+              enum:
+                - OK
+                - INTERNAL_ERROR
+              description: Resultatkod som anger om anropet lyckades
+            message:
+              type: string
+              description: Fritext som beskriver felet
         cloudevent_attributes:
           $ref: "#/components/schemas/CloudeventAttributes"
 
