@@ -1,3 +1,9 @@
+## 1.0.4 (2026-05-11)
+
+### Bug Fixes
+
+-  lägger till error code ([23936](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/239368b59d9d833) Ulf Slunga)  
+
 ## 1.0.3 (2026-05-08)
 
 ### Bug Fixes
