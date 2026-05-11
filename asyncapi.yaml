@@ -2,42 +2,15 @@ asyncapi: 3.0.0
 info:
   title: Operativt uppgiftslager Async API
   version: 1.2.0
-  description: Operativt uppgiftslager för hantering av manuella uppgifter utförda av handläggare
+  description: Publicerar statusuppdateringar för manuella uppgifter i operativt uppgiftslager
 
 channels:
-  operativt.uppgiftslager.requests:
-    messages:
-      OperativtUppgiftslagerRequestMessage:
-        $ref: '#/components/messages/OperativtUppgiftslagerRequestMessage'
-  operativt.uppgiftslager.responses:
-    messages:
-      OperativtUppgiftslagerResponseMessage:
-        $ref: '#/components/messages/OperativtUppgiftslagerResponseMessage'
-  operativt.uppgiftslager.status.control:
-    messages:
-      OperativtUppgiftslagerStatusMessage:
-        $ref: '#/components/messages/OperativtUppgiftslagerStatusMessage'
   operativt.uppgiftslager.status.notification:
     messages:
       OperativtUppgiftslagerStatusMessage:
         $ref: '#/components/messages/OperativtUppgiftslagerStatusMessage'
 
 operations:
-  onOperativtUppgiftslagerRequest:
-    action: receive
-    channel:
-      $ref: '#/channels/operativt.uppgiftslager.requests'
-    reply:
-      address:
-        description: Topic där response ska skickas
-        location: "$message.header#/replyTo"
-      channel:
-        $ref: '#/channels/operativt.uppgiftslager.responses'
-  operativtUppgiftslagerStatusControl:
-    action: receive
-    channel:
-      $ref: '#/channels/operativt.uppgiftslager.status.control'
-    summary: Hanterar statusuppdateringar
   operativtUppgiftslagerStatusNotification:
     action: send
     channel:
@@ -46,63 +19,12 @@ operations:
 
 components:
   messages:
-    OperativtUppgiftslagerRequestMessage:
-      headers:
-        $ref: "#/components/schemas/OperativtUppgiftslagerRequestMessageHeaders"
-      payload:
-        title: OperativtUppgiftslagerRequestMessage
-        $ref: "#/components/schemas/OperativtUppgiftslagerRequestMessage"
-
-    OperativtUppgiftslagerResponseMessage:
-      headers:
-        $ref: "#/components/schemas/OperativtUppgiftslagerResponseMessageHeaders"
-      payload:
-        title: OperativtUppgiftslagerResponseMessage
-        $ref: "#/components/schemas/OperativtUppgiftslagerResponseMessage"
-
     OperativtUppgiftslagerStatusMessage:
       payload:
         title: OperativtUppgiftslagerStatusMessage
         $ref: "#/components/schemas/OperativtUppgiftslagerStatusMessage"
 
   schemas:
-    OperativtUppgiftslagerRequestMessage:
-      type: object
-      title: OperativtUppgiftslagerRequestMessage
-      required:
-        - version
-        - handlaggning_id
-        - regel
-        - cloudevent_attributes
-      properties:
-        version:
-          type: string
-          description: Regelns version
-        handlaggning_id:
-          type: string
-          format: uuid
-          description: Unikt ID som identifierar handläggningsärendet
-        individer:
-          type: array
-          items:
-            $ref: '#/components/schemas/Idtyp'
-            description: Unikt ID som identifierar en individ
-          description: Lista av individer i ärendet
-        regel:
-          type: string
-          description: Namn på regeln
-        beskrivning:
-          type: string
-          description: Kortfattad beskrivning av uppgiften
-        verksamhetslogik:
-          type: string
-        roll:
-          type: string
-        url:
-          type: string
-        cloudevent_attributes:
-          $ref: "#/components/schemas/CloudeventAttributes"
-
     OperativtUppgiftslagerStatusMessage:
       type: object
       title: OperativtUppgiftslagerStatusMessage
@@ -132,59 +54,6 @@ components:
             - Tilldelad
             - Avslutad
             - Avbruten
-        cloudevent_attributes:
-          $ref: "#/components/schemas/CloudeventAttributes"
-
-    OperativtUppgiftslagerResponseMessageHeaders:
-      type: object
-      properties:
-        correlationId:
-          type: string
-          format: uuid
-          description: Unikt id som kopplar ihop request & response
-
-    OperativtUppgiftslagerRequestMessageHeaders:
-      type: object
-      properties:
-        replyTo:
-          type: string
-          description: Topic där response ska skickas
-        correlationId:
-          type: string
-          format: uuid
-          description: Unikt id som kopplar ihop request & response
-      required:
-        - replyTo
-
-    OperativtUppgiftslagerResponseMessage:
-      type: object
-      title: OperativtUppgiftslagerResponseMessage
-      required:
-        - cloudevent_attributes
-        - result
-      properties:
-        uppgift_id:
-          type: string
-          format: uuid
-          description: Unikt ID som identifierar instansen av uppgifts-objektet
-        handlaggning_id:
-          type: string
-          format: uuid
-          description: Unikt ID som identifierar handläggningsärendet
-        result:
-          type: object
-          required:
-            - code
-          properties:
-            code:
-              type: string
-              enum:
-                - OK
-                - INTERNAL_ERROR
-              description: Resultatkod som anger om anropet lyckades
-            message:
-              type: string
-              description: Fritext som beskriver felet
         cloudevent_attributes:
           $ref: "#/components/schemas/CloudeventAttributes"
 
