@@ -49,11 +49,6 @@ components:
           title: status
           type: string
           description: Status för uppgiften
-          enum:
-            - Ny
-            - Tilldelad
-            - Avslutad
-            - Avbruten
         cloudevent_attributes:
           $ref: "#/components/schemas/CloudeventAttributes"
 
