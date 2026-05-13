@@ -1,3 +1,10 @@
+## 1.0.5 (2026-05-13)
+
+### Bug Fixes
+
+-  Change status field type from enum to string ([99d86](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/99d8623a5f92fe9) Lars Persson)  
+-  ta bort kanaler och meddelanden utom status.notification ([9c664](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/9c664daa35eb1e0) Ulf Slunga)  
+
 ## 1.0.4 (2026-05-11)
 
 ### Bug Fixes
