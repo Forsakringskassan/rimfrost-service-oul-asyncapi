@@ -48,9 +48,19 @@ components:
         status:
           title: status
           type: string
-          description: Status för uppgiften
+          description: Status för uppgiften, kan t.ex. använda definitioner i UppgiftStatus
         cloudevent_attributes:
           $ref: "#/components/schemas/CloudeventAttributes"
+
+    UppgiftStatus:
+      type: string
+      title: UppgiftStatus
+      description: Fördefinierade statusvärden för en uppgift
+      enum:
+        - NY
+        - TILLDELAD
+        - AVSLUTAD
+        - AVBRUTEN
 
     CloudeventAttributes:
       type: object
