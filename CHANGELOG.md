@@ -1,3 +1,13 @@
+## 1.0.6 (2026-06-02)
+
+### Bug Fixes
+
+-  Add support for sending planerad_till with status update ([240c8](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/240c87c0188b083) Lars Persson)  
+-  **deps**  update dependency se.fk.gradle:gradle-conventions to v1.18.2 ([e7b4a](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/e7b4a988d3b2c5a) renovate[bot])  
+
+### Dependency updates
+
+- update gradle to v9.5.1 ([209cc](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/209cc7b5103fc7d) renovate[bot])  
 ## 1.0.5 (2026-05-13)
 
 ### Bug Fixes
