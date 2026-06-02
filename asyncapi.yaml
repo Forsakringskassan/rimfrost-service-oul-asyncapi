@@ -51,6 +51,11 @@ components:
           description: Status för uppgiften
         cloudevent_attributes:
           $ref: "#/components/schemas/CloudeventAttributes"
+        planerad_till:
+          type: string
+          format: date-time
+          description: Planerad tidpunkt för utförandet av uppgiften
+          nullable: true
 
     CloudeventAttributes:
       type: object
