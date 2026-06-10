@@ -32,7 +32,7 @@ components:
         - handlaggning_id
         - uppgift_id
         - status
-        - cloudevent_attributes
+        - process_info
       properties:
         handlaggning_id:
           type: string
@@ -49,8 +49,8 @@ components:
           title: status
           type: string
           description: Status för uppgiften
-        cloudevent_attributes:
-          $ref: "#/components/schemas/CloudeventAttributes"
+        process_info:
+          $ref: '#/components/schemas/ProcessInfo'
         planerad_till:
           type: string
           format: date-time
@@ -63,6 +63,19 @@ components:
       additionalProperties:
         type: string
       description: CloudEvent-attribut som skickas med i request och returneras oförändrade i response och statusnotifikationer
+
+    ProcessInfo:
+      type: object
+      title: ProcessInfo
+      properties:
+        cloudevent_attributes:
+          $ref: '#/components/schemas/CloudeventAttributes'
+        reply_topic:
+          type: string
+      required:
+        - cloudevent_attributes
+        - reply_topic
+      description: Process information som skickas med i request och returneras oförändrad i response och statusnotifikationer
 
     Idtyp:
       type: object
