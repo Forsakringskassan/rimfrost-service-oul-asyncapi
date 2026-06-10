@@ -1,3 +1,9 @@
+## 1.1.1 (2026-06-10)
+
+### Bug Fixes
+
+-  Add ProcessInfo ([255fe](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/255feb42873be36) Lars Persson)  
+
 ## 1.0.6 (2026-06-02)
 
 ### Bug Fixes
