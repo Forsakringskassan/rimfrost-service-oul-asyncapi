@@ -1,3 +1,15 @@
+## 1.1.2 (2026-09-21)
+
+### Bug Fixes
+
+-  **deps**  update dependency se.fk.gradle:gradle-conventions to v1.18.3 ([78445](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/78445260911b6a9) renovate[bot])  
+
+### Dependency updates
+
+- pin forsakringskassan/.github action to d1349e6 ([151d7](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/151d7def3d3ca59) renovate[bot])  
+- update gradle to v9.7.1 ([1f1bf](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/1f1bf35d77831dc) renovate[bot])  
+- update gradle to v9.6.1 ([1bb36](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/1bb361dafedcd48) renovate[bot])  
+- update gradle to v9.6.0 ([e0f93](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/e0f939d173f73f9) renovate[bot])  
 ## 1.1.1 (2026-06-10)
 
 ### Bug Fixes
