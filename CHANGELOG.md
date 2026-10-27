@@ -1,3 +1,15 @@
+## 1.1.3 (2026-10-27)
+
+### Bug Fixes
+
+-  Replace github workflows ([6d9b4](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/6d9b4b11986dbc8) Lars Persson)  
+
+### Dependency updates
+
+- update forsakringskassan/.github digest to cbd74f1 ([cea6a](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/cea6a6709ee5f99) renovate[bot])  
+- update gradle to v9.8.1 ([1cce2](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/1cce20929f208b7) renovate[bot])  
+- update gradle to v9.8.0 ([61801](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/6180165e729c808) renovate[bot])  
+- update forsakringskassan/.github digest to bfb01f7 ([86991](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/86991a804f42047) renovate[bot])  
 ## 1.1.2 (2026-09-21)
 
 ### Bug Fixes
