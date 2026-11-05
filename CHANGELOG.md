@@ -1,3 +1,12 @@
+## 1.1.4 (2026-11-05)
+
+### Bug Fixes
+
+-  Remove replyTopic from ProcessInfo ([992a5](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/992a50bd08435c1) Lars Persson)  
+
+### Dependency updates
+
+- update forsakringskassan/.github digest to 625efb1 ([fdf3e](https://github.com/Forsakringskassan/rimfrost-service-oul-asyncapi/commit/fdf3ee68a7f0f8c) renovate[bot])  
 ## 1.1.3 (2026-10-27)
 
 ### Bug Fixes
